@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Flights IL - הצטרפות להשקה</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+            color: #0f172a; /* Slate 900 */
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4); }
+            50% { box-shadow: 0 0 20px 0 rgba(249, 115, 22, 0.7); }
+        }
+        .btn-pulse {
+            animation: pulse-glow 2s infinite;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Footer Links */
+        .legal-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .legal-link:hover {
+            color: #0ea5e9;
+        }
+        .legal-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #0ea5e9;
+            transition: width 0.3s ease;
+        }
+        .legal-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <section class="px-6 py-12 md:py-20 bg-white shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl -z-10 opacity-60 translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-cyan-50 rounded-full blur-3xl -z-10 opacity-60 -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <div class="mb-6 animate-float inline-block">
+                <span class="text-6xl md:text-7xl">✈️</span>
+            </div>
+
+            <div class="mb-4">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-800 text-sm font-bold tracking-wide border border-blue-200">
+                    🔥 ההצטרפות חינם לרגל ההשקה
+                </span>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight text-slate-900">
+                Hidden Flights
+                <span class="block text-2xl md:text-4xl font-bold text-slate-600 mt-2">הטיסות שחברות התעופה מסתירות</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                היו הראשונים להיחשף לטעויות מחיר, כרטיסים נסתרים ודילים סודיים לפני שכולם מגלים אותם. 
+                <br><strong>הערוץ פתוח כעת בחינם לזמן מוגבל.</strong>
+            </p>
+
+            <a href="https://t.me/HiddenFlightsIL" onclick="fbq('track', 'Lead');" class="btn-pulse inline-flex items-center justify-center px-10 py-4 text-xl font-bold text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-full shadow-lg transform transition hover:scale-105 hover:shadow-2xl">
+                כניסה להשקה (חינם) 🚀
+            </a>
+            <p class="mt-3 text-sm text-slate-400">הלינק פתוח ל-200 המצטרפים הראשונים בלבד</p>
+        </div>
+    </section>
+
+    <section class="px-6 py-16 bg-slate-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">💎</div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">יתרון למצטרפים ראשונים</h3>
+                    <p class="text-slate-600">הערוץ בהרצה שקטה. זה אומר שיש לכם פחות תחרות על כל דיל נדיר, ויותר סיכוי לתפוס את המחירים לפני שהם נגמרים.</p>
+                </div>
+
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">טעויות מחיר בזמן אמת</h3>
+                    <p class="text-slate-600">אנחנו סורקים את הרשת 24/7. כשחברת תעופה טועה במחיר, אתם מקבלים את הלינק תוך דקות, לפני שהם מספיקים לתקן.</p>
+                </div>
+
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">100% שקיפות</h3>
+                    <p class="text-slate-600">אנחנו לא סוכנות נסיעות. אתם מקבלים לינקים ישירים למחירים הכי נמוכים ברשת, ללא עמלות תיווך נסתרות.</p>
+                </div>
+
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">⏳</div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">הזדמנות מוגבלת</h3>
+                    <p class="text-slate-600">אנחנו בונים קהילה איכותית. הכניסה היא חינם כרגע לרגל ההשקה, אך הערוץ עשוי להפוך לפרטי בקרוב.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 py-20 bg-white">
+        <div class="max-w-3xl mx-auto text-center bg-blue-50 p-10 md:p-14 rounded-3xl border border-blue-100">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">אל תפספסו את הגל הראשון</h2>
+            <p class="text-lg text-slate-600 mb-8">
+                החופשה הבאה שלכם יכולה לעלות חצי מחיר. <br class="hidden md:block">
+                לחצו על הכפתור והצטרפו לקהילת Hidden Flights לפני שייסגר.
+            </p>
+            
+            <a href="https://t.me/HiddenFlightsIL" onclick="fbq('track', 'Lead');" class="inline-flex items-center justify-center px-12 py-5 text-xl font-bold text-white bg-slate-900 rounded-full shadow-xl hover:bg-slate-800 transition-colors">
+                שריינו לי מקום בחינם 🎁
+            </a>
+            
+            <div class="mt-6 flex justify-center gap-4 text-sm text-slate-500 font-medium">
+                <span>✓ ללא ספאם</span>
+                <span>✓ אפשר לצאת בכל רגע</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-auto py-10 px-6 bg-slate-50 border-t border-slate-200 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-6 mb-6 text-sm font-medium text-slate-600">
+                <a href="./terms.html" class="legal-link">תקנון ותנאי שימוש</a>
+                <a href="./privacy.html" class="legal-link">מדיניות פרטיות</a>
+                <a href="./accessibility.html" class="legal-link">הצהרת נגישות</a>
+                <a href="./contact.html" class="legal-link">צור קשר</a>
+            </div>
+            <p class="text-xs text-slate-400">
+                © 2025 Hidden Flights IL. כל הזכויות שמורות.<br>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
